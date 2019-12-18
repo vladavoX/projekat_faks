@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Movie</title>
+
+	<!-- CUSTOM STYLE -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form class="add" method="POST">
+		<div>
+			<label for="movie_id">ID: </label>
+			<input type="text" name="movie_id" id="movie_id">
+			<p id="req_movie_id"></p>
+			<p id="id_taken"></p>
+		</div>
+		<div>
+			<label for="movie_title">Title: </label>
+			<input type="text" name="movie_title" id="movie_title">
+			<p id="req_movie_title"></p>
+		</div>
+		<div>
+			<label for="movie_genre">Genre: </label>
+			<input type="text" name="movie_genre" id="movie_genre">
+			<p id="req_movie_genre"></p>
+		</div>
+		<div>
+			<label for="movie_year">Year: </label>
+			<input type="text" name="movie_year" id="movie_year">
+			<p id="req_movie_year"></p>
+		</div>
+		<div>
+			<label for="movie_price">Price: </label>
+			<input type="text" name="movie_price" id="movie_price">
+			<p id="req_movie_price"></p>
+		</div>
+		<div>
+			<label for="number_of_copies">Number Of Copies: </label>
+			<input type="text" name="number_of_copies" id="number_of_copies">
+			<p id="req_number_of_copies"></p>
+		</div>
+		<div>
+			<label for="movie_image">Cover: </label>
+			<input type="file" name="movie_image" id="movie_image" accept="image/*">
+			<p id="req_movie_cover"></p>
+		</div>
+		<div>
+			<label for="movie_director">Director: </label>
+			<input type="text" name="movie_director" id="movie_director">
+			<p id="req_movie_director"></p>
+		</div>
+		<div class="form-button">
+			<button type="button" id="add_button" onclick="add()">Add</button>
+		</div>
+	</form>
+
+	<!-- CUSTOM SCRIPT -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

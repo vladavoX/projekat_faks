@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+
+	<!-- CUSTOM STYLE -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form class="register" method="POST">
+		<div>
+			<label for="reg_name">Name: </label>
+			<input type="text" name="reg_name" id="reg_name" placeholder="Johnny">
+			<p id="req_name"></p>
+		</div>
+		<div>
+			<label for="reg_lastname">Lastname: </label>
+			<input type="text" name="reg_lastname" id="reg_lastname" placeholder="Bravo">
+			<p id="req_lastname"></p>
+		</div>
+		<div>
+			<label for="reg_username">Username: </label>
+			<input type="text" name="reg_username" id="reg_username" placeholder="Username">
+			<p id="req_username"></p>
+			<p id="username_taken"></p>
+		</div>
+		<div>
+			<label for="reg_password">Password: </label>
+			<input type="password" name="reg_password" id="reg_password" placeholder="Password">
+			<p id="req_password"></p>
+		</div>
+		<div class="form-button">
+			<button type="button" id="register_button" onclick="register()">Register</button>
+		</div>
+	</form>
+
+	<!-- CUSTOM SCRIPT -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
