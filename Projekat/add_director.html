@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Director</title>
+
+	<!-- CUSTOM STYLE -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form class="add-director">
+		<div>
+			<label for="add_name">Name: </label>
+			<input type="text" name="add_name" id="add_name" placeholder="Johnny">
+			<p id="req_name"></p>
+		</div>
+		<div>
+			<label for="add_lastname">Lastname: </label>
+			<input type="text" name="add_lastname" id="add_lastname" placeholder="Bravo">
+			<p id="req_lastname"></p>
+			<p id="director_exists"></p>
+		</div>
+		<div class="form-button">
+			<button type="button" id="add_director_button" onclick="add()">Add</button>
+		</div>
+	</form>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/add_director.js"></script>
+</body>
+</html>

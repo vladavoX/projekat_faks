@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Admin</title>
+
+	<!-- CUSTOM STYLE -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form class="add-admin" method="POST">
+		<div>
+			<label for="admin_username">Username: </label>
+			<input type="text" name="admin_username" id="admin_username" placeholder="Username">
+			<p id="req_username"></p>
+			<p id="username_taken"></p>
+		</div>
+		<div>
+			<label for="admin_password">Password: </label>
+			<input type="password" name="admin_password" id="admin_password" placeholder="Password">
+			<p id="req_password"></p>
+		</div>
+		<div class="form-button">
+			<button type="button" id="add_admin_button" onclick="add_new_admin()">Register</button>
+		</div>
+	</form>
+
+	<!-- CUSTOM SCRIPT -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/add_admin.js"></script>
+</body>
+</html>

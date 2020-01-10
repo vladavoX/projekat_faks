@@ -1,7 +1,7 @@
 /* General */
 body {
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 150px;
 	font-family: Arial;
 }
 nav {
@@ -26,55 +26,181 @@ nav a:visited {
 	text-decoration: none;
 	color: black;
 }
-	/* login-register.html */
-		.login, .register, .add {
+nav #search_div, nav #error_div {
+	margin-top: 20px;
+}
+#error_div {
+	color: red;
+	font-weight: bold;
+}
+#access_denied {
+	text-align: center;
+}
+#no_movies {
+	color: red;
+	text-align: center;
+	font-weight: bold;
+}
+#go_back {
+	text-align: center;
+}
+	/* user_profile.html-edit_user_profile.html */
+		#user_profile, #edit_user_profile {
+			background-color: #383838;
+		}
+		#user_profile #profile_details, #edit_user_profile #profile_details {
+			border: 1px solid lightblue;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#not_logged_in {
+			color: red;
+			text-align: center;
+		}
+		#profile_details {
+			font-weight: bold;
+			color: orange;
+			background-color: #636363;
+			padding: 20px 0;
+			width: 200px;
+		}
+		#profile_details span {
+			color: white;
+		}
+
+	/* purchase_history.html */
+		#shop_history {
+			background-color: #383838;
+		}
+		#shop_history #bills {
+			background-color: white;
+			width: 20%;
+			padding: 25px;
+			font-weight: bold;
+			margin-left: 40%;
+			border: 1px solid lightblue;
+		}
+	/* shop_cart.html */
+		#shop_cart {
+			background-color: #383838;
+		}
+		#shop_cart #purchase, #shop_cart #total_price {
+			margin-left: 35%;
+			width: 30%;
+			margin-top: 20px;
+		}
+		#purchase {
+			background-color: #a2f2ea;
+			border: 1px solid lightblue;
+		}
+		#shop_cart p {
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		#purchase span {
+			color: red;
+		}
+		#total_price {
+			background-color: white;
+			border: 1px solid lightblue;
+			font-size: 20px;
+		}
+		#checkout_button {
+			margin-top: 20px;
+			text-align: center;
+		}
+		#checkout_button button {
+			font-size: 30px;
+			padding: 5px;
+		}
+		#shop_cart_button {
+			margin-top: 5px;
+			text-align: center;
+		}
+		#shop_cart_button button {
+			margin-left: 10px;
+		}
+		#edit_n_copies {
+			width: 45px;
+		}
+		#shop_cart .error_css {
+			text-align: center;
+		}
+		
+	/* login-register-add_movie-add_admin.html-edit_movie */
+		.login, .register, .add-movie, .add-admin, .edit-movie, .edit_profile, .add-director {
 			width: 500px;
 			margin: 0 auto;
 			border: 1px solid black;
 			padding: 50px;
 			margin-top: 150px;
 		}
-		.login div, .register div, .add div {
+		.login div, .register div, .add-movie div, .add-admin div, .edit-movie div, .edit_profile div, .add-director div {
 			margin-top: 20px;
 		}
-		.login label, .register label, .add label {
+		.login label, .register label, .add-movie label, .add-admin label, .edit-movie label, .edit_profile label, .add-director label {
 			display: inline-block;
 			text-align: right;
 			width: 40%;
 		}
-		.login input, .register input, .add input {
+		.login input, .register input, .add-movie input, .add-admin input, .edit-movie input, .edit_profile input, .add-director input {
 			width: 40%;
 		}
 
 		.form-button {
 			text-align: center;
 		}
-		.register p, .login p, .add p {
+		.register p, .login p, .add-movie p, .add-admin p, .edit-movie p, .edit_profile p, .add-director p {
 			text-align: center;
 			color: red;
 			font-weight: bold;
 		}
+		.edit-movie {
+			background-color: white;
+			margin-top: 10px;
+			margin-bottom: 50px;
+		}
+		.edit_profile {
+			background-color: white;
+			margin-top: 10px;
+			margin-bottom: 50px;
+		}
 
-	/* index.html */
-		#index_page {
+	/* index.html-film.html-edit_movie.html */
+		#index_page, #film_page, #edit_movie {
 			background-color: #383838;
 		}
-		table {
-			margin: 0 auto;
-			border-spacing: 25px;
-		}
-		table td {
-			text-align: left;
-		}
-		td p {
+		/* INDEX ONLY */
+			table {
+				margin: 0 auto;
+				border-spacing: 25px;
+			}
+			table td {
+				text-align: left;
+			}
+			td p {
+				margin-bottom: 0px;
+			}
+		#index_page #movie_title, #film_page #movie_title, #edit_movie #movie_edit_title {
 			font-weight: bold;
-			color: white;
-			margin-bottom: 0px;
 		}
-		.movie_director {
+		#index_page #title, #film_page #title, #edit_movie #title{
+			color: white;
+		}
+		#index_page .movie_director, #film_page .movie_director, #edit_movie .movie_director {
 			margin-top: 0;
 			color: red;
 			font-size: 15px;
+		}
+		#index_page #edit_button, #user_profile #edit_button{
+			text-align: center;
+		}
+		#index_page #edit_button button, #user_profile #edit_button button{
+			margin: 5px;
+			padding: 5px;
+			font-weight: bold;
+			border: none;
 		}
 		.movie_director span {
 			color: orange;
@@ -87,7 +213,7 @@ nav a:visited {
 			text-decoration: none;
 		}
 		#movie_cover {
-			width: 220px;
+			width: 200px;
 			height: 270px;
 			object-fit: fill;
 			border: 1px solid gray;
@@ -99,3 +225,37 @@ nav a:visited {
 			opacity: .5;
     		transition: .5s ease-in-out;
 		}
+		/* FILM-EDIT_MOVIE ONLY */
+			#film_page #details, #edit_movie #details {
+				color: white;
+			}
+			#details p {
+				margin-top: 1px;
+				margin-bottom: 1px;
+			}
+			#details span {
+				color: orange;
+			}
+			#film_page #overlay, #film_page #movie_title, #film_page #details, #edit_movie #overlay, #edit_movie #movie_edit_title, #edit_movie #details {
+				text-align: center;
+			}
+			#buy_button {
+				margin-top: 15px;
+				text-align: center;
+			}
+			#buy_button input {
+				margin-left: 10px;
+				width: 40px;
+			}
+			#film_page #copies_req {
+				margin-top: 10px;
+				text-align: center;
+				color: red;
+				font-weight: bold;
+			}
+			#film_page #exceed {
+				margin-top: 10px;
+				text-align: center;
+				color: red;
+				font-weight: bold;
+			}
